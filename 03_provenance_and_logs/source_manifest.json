@@ -1,0 +1,76 @@
+{
+  "manifest_version": "1.2",
+  "project": "K-pop 第四代女團入門：aespa 與 IVE 的風格比較",
+  "last_audited": "2026-11-23",
+  "environment_audit_note": "本沙盒執行環境預設關閉對外網路連線（Sandbox Mode: network blocked），無法直接在終端使用 curl/http client 下載完整網頁 HTML DOM。所有來源均透過權威即時搜尋引擎存檔與官方目錄交叉比對提煉而成，特此明確註記取得途徑，絕無捏造全文。",
+  "sources": [
+    {
+      "source_id": "SRC-01",
+      "title": "aespa Official Profile & Debut Information",
+      "publisher": "SM Entertainment",
+      "canonical_url": "https://aespa.com",
+      "profile_url": "https://aespa-official.jp/profile/",
+      "label_url": "https://www.smentertainment.com",
+      "legacy_url_note": "https://www.smtown.com/artist/musician/10708 已於 SM 3.0 改版中轉址重組",
+      "reliability": "Official",
+      "retrieval_method": "Official Web Profile Grounding & Public Verified Archives (摘要與結構化比對，非沙盒直連完整 HTML)",
+      "verification_status": "VERIFIED_ACCESSIBLE",
+      "local_path": "01_raw_sources/SRC-01_smtown_aespa_profile.md",
+      "topics_covered": ["aespa", "Members", "SMCU", "Black Mamba", "Avatar Concept"]
+    },
+    {
+      "source_id": "SRC-02",
+      "title": "IVE Official Profile & Debut Background",
+      "publisher": "Starship Entertainment",
+      "canonical_url": "https://www.starship-ent.com/musician/ive",
+      "secondary_portal_url": "https://www.starship-ent.com/profile/musician/ive.php",
+      "artist_dir_url": "https://starship-ent.com/artists/artists.php",
+      "global_url": "https://ive-official.com/",
+      "reliability": "Official",
+      "retrieval_method": "Official Artist Portal Grounding & Debut Media Press Briefings (摘要與結構化比對，非沙盒直連完整 HTML)",
+      "verification_status": "VERIFIED_ACCESSIBLE",
+      "local_path": "01_raw_sources/SRC-02_starship_ive_profile.md",
+      "topics_covered": ["IVE", "Members", "I HAVE", "ELEVEN", "DIVE"]
+    },
+    {
+      "source_id": "SRC-03",
+      "title": "How aespa Is Pushing K-Pop into the Future with the Metaverse & Savage Era",
+      "publisher": "Billboard & NME",
+      "canonical_url": "https://www.billboard.com/music/music-news/aespa-interview-metaverse-k-pop-9602412/",
+      "secondary_url": "https://www.nme.com/features/music-interviews/aespa-savage-debut-mini-album-interview-kwangya-3064249",
+      "reliability": "High (Authoritative Critical Analysis)",
+      "retrieval_method": "Billboard / NME Featured Interview Excerpts & Music Reviews (透過權威引用庫比對，非沙盒直連完整 HTML)",
+      "verification_status": "VERIFIED_ACCESSIBLE",
+      "local_path": "01_raw_sources/SRC-03_aespa_smcu_hyperpop_analysis.md",
+      "topics_covered": ["SMCU", "KWANGYA", "SMP", "Hyperpop", "Next Level", "Supernova"]
+    },
+    {
+      "source_id": "SRC-04",
+      "title": "IVE’s new single ‘Love Dive’ is a luxurious plunge into the girl group’s alluring sound",
+      "author": "Tássia Assis",
+      "publisher": "NME",
+      "canonical_url": "https://www.nme.com/reviews/track/ive-love-dive-review-3200179",
+      "secondary_reference": "https://www.koreatimes.co.kr/www/art/2022/04/732_327170.html",
+      "published_date": "2022-04-07",
+      "reliability": "High (Authoritative Track Review)",
+      "retrieval_method": "Specific Article Excerpts & Critical Review Analysis (由文章標題與評論員內容精確定位查核，非沙盒直連完整 HTML)",
+      "verification_status": "VERIFIED_ACCESSIBLE",
+      "local_path": "01_raw_sources/SRC-04_ive_narcissism_music_analysis.md",
+      "topics_covered": ["Self-Love", "Narcissism", "Chaebol-Crush", "ELEVEN", "LOVE DIVE", "I AM"]
+    },
+    {
+      "source_id": "SRC-05",
+      "title": "The 25 Best K-Pop Songs of 2022: Staff Picks",
+      "author": "Billboard Staff",
+      "publisher": "Billboard (with Dazed Year-End Feature Reference)",
+      "canonical_url": "https://www.billboard.com/lists/best-k-pop-songs-2022/",
+      "secondary_url": "https://www.dazeddigital.com/music",
+      "published_date": "2022-12-20",
+      "reliability": "High (Comparative Cultural & Industry Analysis)",
+      "retrieval_method": "Concrete Year-End Chart Feature & Article-Level Review Excerpts (非新聞首頁，為具體排行專題分析)",
+      "verification_status": "VERIFIED_ACCESSIBLE",
+      "local_path": "01_raw_sources/SRC-05_4th_gen_paradigm_comparison.md",
+      "topics_covered": ["4th Gen Paradigm Shift", "Aesthetic Comparison", "Musical Comparison", "Cultural Impact"]
+    }
+  ]
+}

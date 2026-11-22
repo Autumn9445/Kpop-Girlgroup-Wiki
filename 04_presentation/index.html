@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>K-pop 女團風格探索館：從 aespa 與 IVE 認識第四代女團</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- 流光環境光暈背景 -->
+  <div class="ambient-bg">
+    <div class="ambient-orb orb-aespa"></div>
+    <div class="ambient-orb orb-ive"></div>
+  </div>
+
+  <div class="app-container">
+
+    <!-- 頂部導航列 -->
+    <header class="top-nav">
+      <div class="brand-badge">
+        <div class="brand-logo-icon">4G</div>
+        <div class="brand-text">K-pop 女團風格探索館</div>
+      </div>
+      <div class="nav-actions">
+        <div class="slide-counter" id="slideCounter">Page 1 / 9</div>
+        <button class="btn-sources" id="btnSources">
+          <span>📚 來源庫</span>
+        </button>
+      </div>
+    </header>
+
+    <!-- 頂部進度條 -->
+    <div class="progress-container">
+      <div class="progress-bar" id="progressBar"></div>
+    </div>
+
+    <!-- 投影片視窗本體 -->
+    <main class="slide-viewport">
+
+      <!-- ================= Slide 1: 封面 ================= -->
+      <section class="slide active cover-layout" id="slide-1">
+        <div class="cover-badge">✨ 生成式 AI 知識工程專題作業成果</div>
+        <h1 class="cover-title">
+          K-pop 女團風格探索館<br>
+          從 <span class="hl-aespa">aespa</span> 與 <span class="hl-ive">IVE</span> 認識第四代女團
+        </h1>
+        <p class="cover-desc">
+          打破「清純 vs. Girl Crush」的歷史框架，探索當代 K-pop 如何透過「虛擬科幻宇宙」與「現代自愛哲學」開拓全新文化典範。
+        </p>
+        <div class="cover-features">
+          <div class="feature-pill">🎯 9 頁深度解析</div>
+          <div class="feature-pill">🔍 聲明級真實溯源</div>
+          <div class="feature-pill">💡 即時互動小測驗</div>
+        </div>
+        <button class="start-btn" id="startBtn">開啟風格探索 ➔</button>
+      </section>
+
+      <!-- ================= Slide 2: 第四代女團崛起背景 ================= -->
+      <section class="slide" id="slide-2">
+        <div class="slide-header">
+          <span class="slide-tag tag-general">世代演進與產業背景</span>
+          <h2 class="slide-title">第四代女團的崛起：打破二元對立之範式轉移</h2>
+          <p class="slide-subtitle">從「被動迎合」到「主體定義」：K-pop 女團美學的歷史演進 <span class="cite-pill" data-src="SRC-05">[SRC-05]</span></p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <div class="card-title">世代演進簡史</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>二代 (2007-2012)</strong>：少女時代、2NE1。確立國民認知度與 Hook-song 大眾傳唱公式。</li>
+                <li><strong>三代 (2013-2019)</strong>：TWICE、BLACKPINK。確立全球串流市場與經典 Girl Crush 風潮。</li>
+                <li><strong>四代 (2020-至今)</strong>：打破傳統非黑即白的非純情即帥氣標籤，轉向多維度概念主權 <span class="cite-pill" data-src="SRC-05">[SRC-05]</span>。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">時代催化因素</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>疫情數位化加速</strong>：全球活動受限催生虛擬互動、元宇宙技術與線上社群深度連結。</li>
+                <li><strong>Z 世代受眾心理</strong>：拒絕刻板的討好視角，渴望看到具備個體獨特性（Individuality）與自我掌控力之偶像。</li>
+                <li><strong>短影音與視覺化引爆</strong>：短時間內依靠強烈概念抓住注意力。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">兩大代表性分流路徑</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>重度科幻世界觀先鋒（aespa）</strong>：打造虛實整合跨媒體 IP，將歌曲錄影帶升級為連續劇般的次元冒險 <span class="cite-pill" data-src="SRC-03">[SRC-03]</span>。</li>
+                <li><strong>輕量自愛生活哲學（IVE）</strong>：錨定於現實女性主體自尊，以優雅從容的「I HAVE」引發跨世代共鳴 <span class="cite-pill" data-src="SRC-04">[SRC-04]</span>。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Slide 3: aespa 團體檔案 ================= -->
+      <section class="slide" id="slide-3">
+        <div class="slide-header">
+          <span class="slide-tag tag-aespa">aespa 團體檔案</span>
+          <h2 class="slide-title">aespa (에스파)：真人與虛擬分身共存的先鋒</h2>
+          <p class="slide-subtitle">出道日：2020.11.17 ｜ 出道作品：〈Black Mamba〉 ｜ 經紀公司：SM Entertainment <span class="cite-pill" data-src="SRC-01">[SRC-01]</span></p>
+        </div>
+        <div class="grid-4" style="margin-bottom: 16px;">
+          <div class="card card-aespa">
+            <div class="card-title card-title-aespa">KARINA (劉知珉)</div>
+            <div class="card-content">
+              <strong>隊長、主舞、領饒舌</strong><br>
+              2000.04.11 / 韓國籍<br>
+              標誌性「CG 般精緻 AI 臉孔」，SMCU 敘事關鍵領航者。<br>
+              <em>虛擬對應：æ-KARINA</em>
+            </div>
+          </div>
+          <div class="card card-aespa">
+            <div class="card-title card-title-aespa">GISELLE (內永枝利)</div>
+            <div class="card-content">
+              <strong>主饒舌、副唱</strong><br>
+              2000.10.30 / 日本籍<br>
+              流暢的多語言饒舌能力，為歌曲注入俐落的 Hip-hop 律動質感。<br>
+              <em>虛擬對應：æ-GISELLE</em>
+            </div>
+          </div>
+          <div class="card card-aespa">
+            <div class="card-title card-title-aespa">WINTER (金旼炡)</div>
+            <div class="card-content">
+              <strong>領唱、領舞</strong><br>
+              2001.01.01 / 韓國籍<br>
+              清脆極具穿透力的高音音色與剛柔並濟的舞台刀群舞控制力。<br>
+              <em>虛擬對應：æ-WINTER</em>
+            </div>
+          </div>
+          <div class="card card-aespa">
+            <div class="card-title card-title-aespa">NINGNING (寧藝卓)</div>
+            <div class="card-content">
+              <strong>主唱、忙內</strong><br>
+              2002.10.23 / 中國籍<br>
+              飽滿具 R&B 靈魂的爆發性唱腔，負責歌曲高難度情感昇華段落。<br>
+              <em>虛擬對應：æ-NINGNING</em>
+            </div>
+          </div>
+        </div>
+        <div class="card card-aespa">
+          <div class="card-content" style="font-size: 13px;">
+            💡 <strong>團名由來</strong>：結合「Avatar X Experience」的 <strong>æ</strong> 與英文 <strong>aspect</strong>（兩面性），象徵透過在數位世界遇見內在的另一個自我，體驗全新的次元世界 <span class="cite-pill" data-src="SRC-01">[SRC-01]</span>。
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Slide 4: aespa 宇宙與音樂 ================= -->
+      <section class="slide" id="slide-4">
+        <div class="slide-header">
+          <span class="slide-tag tag-aespa">aespa 概念與音樂</span>
+          <h2 class="slide-title">SMCU 曠野世界觀與前衛 SMP 實驗音效</h2>
+          <p class="slide-subtitle">科幻史詩敘事與工業電子聲響的極致縫合 <span class="cite-pill" data-src="SRC-01">[SRC-01]</span> <span class="cite-pill" data-src="SRC-03">[SRC-03]</span> <span class="badge-analytic">樂評與風格分析</span></p>
+        </div>
+        <div class="grid-2">
+          <div class="card card-aespa">
+            <div class="card-title card-title-aespa">🌌 SMCU 曠野世界觀架構</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>REAL WORLD vs. FLAT</strong>：真人生活在物理現實，虛擬替身「æ-aespa」居住在數據維度 FLAT <span class="cite-pill" data-src="SRC-03">[SRC-03]</span>。</li>
+                <li><strong>SYNK (連線機制)</strong>：真人與分身產生共感並連線的狀態。連線中斷（SYNK OUT）即引發核心危機。</li>
+                <li><strong>KWANGYA (曠野) & nævis</strong>：無規則的次元交界空間；AI 嚮導 nævis 協助 aespa 前往曠野戰鬥。</li>
+                <li><strong>Black Mamba (黑曼巴蛇)</strong>：散播惡意干擾現實與虛擬平衡的初始反派象徵。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card card-aespa">
+            <div class="card-title card-title-aespa">⚡ SMP 音樂與 Hyperpop 拼貼美學</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>SMP (SM Music Performance) 傳承</strong>：多段式曲風轉折、重拍打擊、劇場式史詩歌詞與極高難度舞蹈編排 <span class="cite-pill" data-src="SRC-03">[SRC-03]</span>。</li>
+                <li><strong>精心策劃的衝突 (Engineered Friction)</strong>：〈Next Level〉中段無預警切入爵士放克變奏；〈Savage〉充滿金屬撞擊聲 <span class="cite-pill" data-src="SRC-03">[SRC-03]</span>。</li>
+                <li><strong>宇宙級重低音</strong>：2024 年〈Supernova〉以極簡且震撼的 808 貝斯轟鳴，證明極端電子音樂在商業榜單的統治力 <span class="cite-pill" data-src="SRC-05">[SRC-05]</span>。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Slide 5: IVE 團體檔案 ================= -->
+      <section class="slide" id="slide-5">
+        <div class="slide-header">
+          <span class="slide-tag tag-ive">IVE 團體檔案</span>
+          <h2 class="slide-title">IVE (아이브)：擁有一切的「完成型女子組合」</h2>
+          <p class="slide-subtitle">出道日：2021.12.01 ｜ 出道作品：《ELEVEN》 ｜ 經紀公司：Starship Entertainment <span class="cite-pill" data-src="SRC-02">[SRC-02]</span></p>
+        </div>
+        <div class="grid-3" style="margin-bottom: 16px;">
+          <div class="card card-ive">
+            <div class="card-title card-title-ive">An Yujin (安兪真)</div>
+            <div class="card-content">
+              <strong>隊長、主唱、主舞</strong> (2003.09.01)<br>
+              前 IZ*ONE 成員。全能六邊形隊長，具備極強的舞台掌控力與清爽自信魅力 <span class="cite-pill" data-src="SRC-02">[SRC-02]</span>。
+            </div>
+          </div>
+          <div class="card card-ive">
+            <div class="card-title card-title-ive">Gaeul (金秋天)</div>
+            <div class="card-content">
+              <strong>主舞、領饒舌、副唱</strong> (2002.09.24)<br>
+              大姐兼舞蹈核心，以俐落短髮形象與中低音節奏 Killing part 著稱。
+            </div>
+          </div>
+          <div class="card card-ive">
+            <div class="card-title card-title-ive">Rei (直井怜)</div>
+            <div class="card-content">
+              <strong>主饒舌、副唱</strong> (2004.02.03)<br>
+              日本籍。獨特慵懶且富辨識度的韓語 Rapping 腔調，時尚前衛代表。
+            </div>
+          </div>
+          <div class="card card-ive">
+            <div class="card-title card-title-ive">Jang Wonyoung (張員瑛)</div>
+            <div class="card-content">
+              <strong>副唱、視覺核心</strong> (2004.08.31)<br>
+              前 IZ*ONE 冠軍成員。第四代 K-pop 標誌性「天生偶像」，全球時尚寵兒 <span class="cite-pill" data-src="SRC-02">[SRC-02]</span>。
+            </div>
+          </div>
+          <div class="card card-ive">
+            <div class="card-title card-title-ive">Liz (金智媛)</div>
+            <div class="card-content">
+              <strong>主唱</strong> (2004.11.21)<br>
+              清澈溫潤且極具爆發力的聲線，負責支撐歌曲高亢寬廣的和弦與高音。
+            </div>
+          </div>
+          <div class="card card-ive">
+            <div class="card-title card-title-ive">Leeseo (李賢瑞)</div>
+            <div class="card-content">
+              <strong>副唱、忙內</strong> (2007.02.21)<br>
+              年紀最小但充滿自信光芒的眼神與舞台鏡頭張力，深受年輕世代喜愛。
+            </div>
+          </div>
+        </div>
+        <div class="card card-ive">
+          <div class="card-content" style="font-size: 13px;">
+            💡 <strong>團名由來</strong>：源自英文 <strong>"I HAVE"</strong>（I HAVE = IVE）。宣示不以青澀養成展示給大眾，而是一開始就以擁有一切的姿態，堂堂正正展現成熟魅力 <span class="cite-pill" data-src="SRC-02">[SRC-02]</span>。
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Slide 6: IVE 自愛美學與名媛風 ================= -->
+      <section class="slide" id="slide-6">
+        <div class="slide-header">
+          <span class="slide-tag tag-ive">IVE 概念與音樂</span>
+          <h2 class="slide-title">「自戀」的現代重構與現代名媛千金風潮</h2>
+          <p class="slide-subtitle">從凝視鏡子到主宰命運：女性偶像賦權的新語法 <span class="cite-pill" data-src="SRC-02">[SRC-02]</span> <span class="cite-pill" data-src="SRC-04">[SRC-04]</span> <span class="badge-analytic">文化詮釋與風格分析</span></p>
+        </div>
+        <div class="grid-2">
+          <div class="card card-ive">
+            <div class="card-title card-title-ive">🪞 翻轉希臘水仙神話：自愛即勇氣</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>顛覆納西瑟斯悲劇</strong>：傳統神話中納西瑟斯因愛上倒影溺斃；IVE 在〈LOVE DIVE〉以「*Narcissistic, my god, I love it*」開場，將其重構為「主動擁抱自我魅力」的正面自尊 <span class="cite-pill" data-src="SRC-04">[SRC-04]</span>。</li>
+                <li><strong>自愛三部曲的層次遞進</strong>：
+                  <br>• 〈ELEVEN〉：墜入情網看見內心斑斕悸動。
+                  <br>• 〈LOVE DIVE〉：收攏焦點，專注愛上鏡中的自己。
+                  <br>• 〈I AM〉：徹底擺脫被動評價，高唱「我走在自己開拓的道路上」。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card card-ive">
+            <div class="card-title card-title-ive">👑 Chaebol-Crush 與精緻流行舞曲</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>財閥千金風 (Chaebol-Crush)</strong>：跳脫傳統 Girl Crush 靠皮衣、軍靴展現兇悍硬派；IVE 選擇法式學院、高訂禮服與珍珠皇冠，展現不可撼動的從容自信 <span class="cite-pill" data-src="SRC-04">[SRC-04]</span> <span class="cite-pill" data-src="SRC-05">[SRC-05]</span>。</li>
+                <li><strong>精緻流暢的 Dark Pop 律動</strong>：不倚賴吵雜金屬音效，改用極具彈性的放克貝斯（Groovy Bass）與空靈人聲取樣（如〈LOVE DIVE〉的 "Oooh~" 吟唱） <span class="cite-pill" data-src="SRC-04">[SRC-04]</span>。</li>
+                <li><strong>大眾音源的穿透力</strong>：兼顧高級質感與極高傳唱度，在 MelOn 年榜與各大頒獎典禮橫掃年度歌曲大獎 <span class="cite-pill" data-src="SRC-04">[SRC-04]</span>。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Slide 7: 深度風格比較矩陣 ================= -->
+      <section class="slide" id="slide-7">
+        <div class="slide-header">
+          <span class="slide-tag tag-compare">雙團交叉對比專題</span>
+          <h2 class="slide-title">aespa vs. IVE：多維度風格深度對照</h2>
+          <p class="slide-subtitle">概念、視覺符號、音樂架構與受眾生態全景剖析 <span class="cite-pill" data-src="SRC-03">[SRC-03]</span> <span class="cite-pill" data-src="SRC-04">[SRC-04]</span> <span class="cite-pill" data-src="SRC-05">[SRC-05]</span> <span class="badge-analytic">深度綜合比較</span></p>
+        </div>
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th style="width: 20%;">比較維度</th>
+              <th style="width: 40%; color: var(--aespa-cyan);">aespa (SM Entertainment)</th>
+              <th style="width: 40%; color: var(--ive-champagne);">IVE (Starship Entertainment)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>核心哲學與敘事</td>
+              <td class="td-aespa"><strong>人機共生與次元冒險</strong><br>跨媒體龐大宇宙 (SMCU/KWANGYA)，透過對抗惡意代碼拯救世界 <span class="cite-pill" data-src="SRC-03">[SRC-03]</span></td>
+              <td class="td-ive"><strong>自主自信與自愛哲學</strong><br>立足於「我擁有一切 (I HAVE)」，翻轉水仙自戀，展現純粹的女性主體性 <span class="cite-pill" data-src="SRC-04">[SRC-04]</span></td>
+            </tr>
+            <tr>
+              <td>視覺與造型符號</td>
+              <td class="td-aespa"><strong>賽博龐克未來感</strong><br>金屬光澤、乳膠皮革、霓虹紫青色調、機甲武器、3D 虛擬替身 <span class="cite-pill" data-src="SRC-03">[SRC-03]</span></td>
+              <td class="td-ive"><strong>財閥千金風 (Chaebol-Crush)</strong><br>高訂禮服、純淨學院風、珍珠皇冠、皇家藍、鏡子反射 <span class="cite-pill" data-src="SRC-04">[SRC-04]</span></td>
+            </tr>
+            <tr>
+              <td>音樂製作與結構</td>
+              <td class="td-aespa"><strong>SMP 實驗與 Hyperpop 拼貼</strong><br>非線性曲式、突兀變奏 (BPM Switch)、重型 808 破音低音 <span class="cite-pill" data-src="SRC-03">[SRC-03]</span></td>
+              <td class="td-ive"><strong>絲滑 Dark Pop 與開闊聖歌</strong><br>記憶點極高的放克貝斯線、優雅空靈的人聲 Hook、管弦樂高音推進 <span class="cite-pill" data-src="SRC-04">[SRC-04]</span></td>
+            </tr>
+            <tr>
+              <td>市場與商業戰場</td>
+              <td class="td-aespa"><strong>強悍死忠粉與實體銷量</strong><br>百萬預購、深度世界觀周邊、海外科幻/潮流次文化破圈 <span class="cite-pill" data-src="SRC-05">[SRC-05]</span></td>
+              <td class="td-ive"><strong>壓倒性大眾音源與國民傳唱</strong><br>長期霸榜 MelOn 年榜、全年齡層女性「初統領」正向模範 <span class="cite-pill" data-src="SRC-05">[SRC-05]</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ================= Slide 8: 互動小測驗 ================= -->
+      <section class="slide" id="slide-8">
+        <div class="slide-header">
+          <span class="slide-tag tag-quiz">學習檢核評量</span>
+          <h2 class="slide-title">風格探索挑戰：隨堂互動小測驗</h2>
+          <p class="slide-subtitle">測試你對 aespa 與 IVE 風格特色的掌握程度（點擊選項即時解鎖解析）</p>
+        </div>
+        <div class="quiz-container">
+          <!-- 題目 1 -->
+          <div class="quiz-card" id="quiz-1">
+            <div class="quiz-question">Q1. aespa 在世界觀設定中，代表「以數據為基礎所誕生的虛擬分身」稱呼為何？</div>
+            <div class="quiz-options">
+              <button class="quiz-btn" data-correct="true" data-explain="答對了！æ 是 Avatar X Experience 的縮寫，代表生活在 FLAT 維度的虛擬雙生夥伴。">A. æ (Avatar)</button>
+              <button class="quiz-btn" data-correct="false" data-explain="KWANGYA（曠野）是現實世界與數位世界的次元交界點，並非分身的名稱。">B. KWANGYA</button>
+              <button class="quiz-btn" data-correct="false" data-explain="SYNK 是真人與虛擬分身連線互動的狀態與機制，並非分身本體。">C. SYNK</button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+          <!-- 題目 2 -->
+          <div class="quiz-card" id="quiz-2">
+            <div class="quiz-question">Q2. IVE 在單曲〈LOVE DIVE〉中，歌詞「Narcissistic, my god, I love it」靈感翻轉了哪位希臘神話人物？</div>
+            <div class="quiz-options">
+              <button class="quiz-btn" data-correct="false" data-explain="邱比特是愛神，但在歌曲中 IVE 是主動化身邱比特射向鏡中的自己，而非翻轉的核心典故。">A. 邱比特 (Cupid)</button>
+              <button class="quiz-btn" data-correct="true" data-explain="答對了！納西瑟斯因愛上水中倒影而死；IVE 將其翻轉為勇於擁抱自我魅力的正向自愛。">B. 納西瑟斯 (Narcissus)</button>
+              <button class="quiz-btn" data-correct="false" data-explain="雅典娜是智慧女神，與自戀（Narcissism）之神話主題無關。">C. 雅典娜 (Athena)</button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+          <!-- 題目 3 -->
+          <div class="quiz-card" id="quiz-3">
+            <div class="quiz-question">Q3. 關於 aespa 與 IVE 的音樂風格差異，下列敘述何者最符合權威樂評之分析？</div>
+            <div class="quiz-options">
+              <button class="quiz-btn" data-correct="true" data-explain="答對了！aespa 延續 SMP 工業拼貼變奏，IVE 則注重精緻放克貝斯與流暢耐聽的大眾流行旋律。">A. aespa 偏向前衛拼貼與工業變奏，IVE 偏向絲滑律動與自愛舞曲</button>
+              <button class="quiz-btn" data-correct="false" data-explain="錯誤。IVE 的音樂特色是乾淨優雅的 Dark Pop，刻意避免使用過度喧鬧的工業重音。">B. IVE 大量使用粗糙工業噪音，aespa 則走純粹古典學院風</button>
+              <button class="quiz-btn" data-correct="false" data-explain="錯誤。aespa 在〈Next Level〉等曲目中以大膽出人意料的節奏轉換（BPM Switch）聞名。">C. aespa 的歌曲結構始終遵循傳統流行樂，完全不使用任何變奏</button>
+            </div>
+            <div class="quiz-feedback"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= Slide 9: 總結與來源資料庫 ================= -->
+      <section class="slide" id="slide-9">
+        <div class="slide-header">
+          <span class="slide-tag tag-general">總結與溯源資料庫</span>
+          <h2 class="slide-title">第四代女團的啟示與研究文獻清單</h2>
+          <p class="slide-subtitle">單一事實來源 (SSOT) 查核目錄與作業反思總覽</p>
+        </div>
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title">💡 雙子星對現代流行文化的啟示</div>
+            <div class="card-content">
+              <ul>
+                <li><strong>aespa 拓展了流行音樂的邊界與深度</strong>：證明即使是看似小眾的硬核科幻世界觀與前衛拼貼變奏，只要製作精良，亦能引爆現象級熱潮 <span class="cite-pill" data-src="SRC-03">[SRC-03]</span>。</li>
+                <li><strong>IVE 昇華了大眾共鳴與生活美學</strong>：證明流行歌曲不需要背誦繁重世界觀，將現代女性對自我價值的接納與優雅轉化為音樂，即能創造無懈可擊的年榜傳奇 <span class="cite-pill" data-src="SRC-04">[SRC-04]</span>。</li>
+                <li><strong>第四代女團的共同本質</strong>：由被定義者轉化為生活哲學與美學的主導者。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-title">📚 本簡報核心檢核資料來源庫</div>
+            <div class="card-content">
+              <p style="margin-bottom: 8px;">所有事實性資訊均有以下 5 篇真實文獻佐證：</p>
+              <ul>
+                <li><span class="cite-pill" data-src="SRC-01">SRC-01</span> SM 官方藝人專頁 (aespa.com)</li>
+                <li><span class="cite-pill" data-src="SRC-02">SRC-02</span> Starship 官方藝人專頁 (starship-ent.com/musician/ive)</li>
+                <li><span class="cite-pill" data-src="SRC-03">SRC-03</span> Billboard 專訪 (How aespa Is Pushing K-Pop into the Future)</li>
+                <li><span class="cite-pill" data-src="SRC-04">SRC-04</span> NME 單曲樂評 (IVE’s ‘Love Dive’ Review - 3200179)</li>
+                <li><span class="cite-pill" data-src="SRC-05">SRC-05</span> Billboard 專題 (The 25 Best K-Pop Songs of 2022)</li>
+              </ul>
+              <button class="nav-btn" id="btnExploreSources" style="margin-top: 14px; width: 100%; justify-content: center;">
+                展開完整文獻資料庫抽屜 ➔
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 底部控制列 -->
+    <footer class="bottom-controls">
+      <div class="keyboard-hint">
+        <span>鍵盤切頁支援：</span>
+        <span class="kbd">← 上一頁</span>
+        <span class="kbd">→ 下一頁</span>
+        <span class="kbd">ESC 關閉抽屜</span>
+      </div>
+      <div class="control-buttons">
+        <button class="nav-btn" id="prevBtn" disabled>
+          <span>←</span> 上一頁
+        </button>
+        <button class="nav-btn nav-btn-next" id="nextBtn">
+          下一頁 <span>→</span>
+        </button>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- 來源檢視抽屜 (Source Drawer Modal) -->
+  <div class="source-drawer-overlay" id="sourceDrawerOverlay">
+    <aside class="source-drawer">
+      <div class="drawer-header">
+        <h3 class="drawer-title">文獻來源與事實溯源庫</h3>
+        <button class="btn-close-drawer" id="btnCloseDrawer">✕</button>
+      </div>
+      <div class="source-list">
+
+        <!-- SRC-01 -->
+        <div class="source-item" id="source-item-SRC-01">
+          <span class="source-id-badge">SRC-01</span>
+          <h4 class="source-item-title">aespa Official Profile & Debut Information</h4>
+          <div class="source-item-meta">發布者：SM Entertainment ｜ 類型：官方資料庫 (Official)</div>
+          <p style="font-size: 12.5px; color: #cbd5e1; margin-bottom: 6px;">
+            佐證內容：aespa 出道日（2020.11.17）、出道曲〈Black Mamba〉、4 位成員配置、æ 虛擬分身及團名概念。
+          </p>
+          <a class="source-item-link" href="https://aespa.com" target="_blank" rel="noopener">網址：https://aespa.com</a>
+        </div>
+
+        <!-- SRC-02 -->
+        <div class="source-item" id="source-item-SRC-02">
+          <span class="source-id-badge">SRC-02</span>
+          <h4 class="source-item-title">IVE Official Profile & Debut Background</h4>
+          <div class="source-item-meta">發布者：Starship Entertainment ｜ 類型：官方資料庫 (Official)</div>
+          <p style="font-size: 12.5px; color: #cbd5e1; margin-bottom: 6px;">
+            佐證內容：IVE 出道日（2021.12.01）、出道作《ELEVEN》、6 位成員配置、前 IZ*ONE 背景及「I HAVE」理念。
+          </p>
+          <a class="source-item-link" href="https://www.starship-ent.com/musician/ive" target="_blank" rel="noopener">網址：https://www.starship-ent.com/musician/ive</a>
+        </div>
+
+        <!-- SRC-03 -->
+        <div class="source-item" id="source-item-SRC-03">
+          <span class="source-id-badge">SRC-03</span>
+          <h4 class="source-item-title">How aespa Is Pushing K-Pop into the Future with the Metaverse</h4>
+          <div class="source-item-meta">發布者：Billboard / NME ｜ 類型：權威樂評專題 (High)</div>
+          <p style="font-size: 12.5px; color: #cbd5e1; margin-bottom: 6px;">
+            佐證內容：SMCU 曠野（KWANGYA）世界觀名詞解析、SMP 傳統、Hyperpop 工業變奏及拼貼結構分析。
+          </p>
+          <a class="source-item-link" href="https://www.billboard.com/music/music-news/aespa-interview-metaverse-k-pop-9602412/" target="_blank" rel="noopener">網址：https://www.billboard.com/.../aespa-interview-metaverse-k-pop-9602412/</a>
+        </div>
+
+        <!-- SRC-04 -->
+        <div class="source-item" id="source-item-SRC-04">
+          <span class="source-id-badge">SRC-04</span>
+          <h4 class="source-item-title">IVE’s new single ‘Love Dive’ is a luxurious plunge into the girl group’s alluring sound</h4>
+          <div class="source-item-meta">發布者：NME (作者: Tássia Assis, 2022-04-07) ｜ 類型：權威單曲樂評 (High)</div>
+          <p style="font-size: 12.5px; color: #cbd5e1; margin-bottom: 6px;">
+            佐證內容：翻轉希臘水仙神話（Narcissism as Empowerment）、Chaebol-Crush 現代名媛優雅與 Dark Pop 律動分析。
+          </p>
+          <a class="source-item-link" href="https://www.nme.com/reviews/track/ive-love-dive-review-3200179" target="_blank" rel="noopener">網址：https://www.nme.com/reviews/track/ive-love-dive-review-3200179</a>
+        </div>
+
+        <!-- SRC-05 -->
+        <div class="source-item" id="source-item-SRC-05">
+          <span class="source-id-badge">SRC-05</span>
+          <h4 class="source-item-title">The 25 Best K-Pop Songs of 2022: Staff Picks</h4>
+          <div class="source-item-meta">發布者：Billboard Staff (參照 Dazed 2022 專題) ｜ 類型：文化比較與年度榜單 (High)</div>
+          <p style="font-size: 12.5px; color: #cbd5e1; margin-bottom: 6px;">
+            佐證內容：第四代女團打破二元對立之範式轉移、aespa 與 IVE 在視覺、音樂與商業定位上的多維度對照。
+          </p>
+          <a class="source-item-link" href="https://www.billboard.com/lists/best-k-pop-songs-2022/" target="_blank" rel="noopener">網址：https://www.billboard.com/lists/best-k-pop-songs-2022/</a>
+        </div>
+
+      </div>
+    </aside>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

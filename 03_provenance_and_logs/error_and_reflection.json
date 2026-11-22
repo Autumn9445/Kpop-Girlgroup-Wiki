@@ -1,0 +1,47 @@
+{
+  "project": "K-pop 第四代女團入門：aespa 與 IVE 的風格比較",
+  "log_type": "Audit & Reflection Log (來源驗證真實問題與反思研討)",
+  "last_updated": "2026-11-23",
+  "real_execution_issues": [
+    {
+      "issue_id": "REAL-ISSUE-001",
+      "category": "Source URL Discrepancy & Path Taxonomy (來源網址路徑分類不一致)",
+      "target_file": "01_raw_sources/SRC-04_ive_narcissism_music_analysis.md & source_manifest.json",
+      "status": "RESOLVED",
+      "discovered_at": "來源與內容稽核階段 (Audit Phase)",
+      "description": "在初始資料攝取時，SRC-04 引用之 NME 樂評網址記錄為 `https://www.nme.com/reviews/album/ive-love-dive-review-3199042`；經使用者與系統重新比對官方文章索引發現，NME 對該作品歸類為單曲評論（Track Review），精確固定路徑實為 `https://www.nme.com/reviews/track/ive-love-dive-review-3200179`。",
+      "root_cause": "流行音樂媒體對單曲專輯（Single Album）的分類標準存在跨目錄交叉索引（兼具 Album 與 Track 屬性）。在自動化檢索時若僅比對標題關鍵字，容易獲取到錯誤的目錄 Slug 或鏡像暫存 ID。",
+      "resolution_applied": "立即更新 `SRC-04` 原始 Markdown 標頭、`source_manifest.json`、`ingest_log.md` 及 `verification_log.md`，統一路徑為官方唯一 Track 評論網址 `3200179`。",
+      "shift_left_reflection": "【核心反思：將來源有效性檢查左移（Shift-Left Verification）之必要性】\n在傳統流程中，若將『來源真實性與網址完整性檢查』留到簡報或最終產出階段，一旦發現來源 URL 錯誤，必須逆向回溯修改來源筆記、Manifest、實體 Wiki 與簡報腳本的引用錨點，引發高度連鎖重工（Cascading Rework）。\n若在『資料取得（Ingest）』第一步即實施嚴格的 HTTP 狀態碼檢驗與精確 Slug 比對（即品質關卡左移），便能保證進入 Wiki 整理的每一份資料均為 100% 確定之單一事實來源（SSOT），後續的知識合成、引用標註與 HTML 生成便無需承擔溯源崩塌的風險。"
+    }
+  ],
+  "candidate_reflection_cases": [
+    {
+      "case_id": "CANDIDATE-CASE-001",
+      "category": "Attribute Discrepancy (官方去標籤化 vs. 民間百科主唱/主舞標籤)",
+      "target_file": "02_wiki_knowledge/entities/ive.md & 01_raw_sources/SRC-02",
+      "status": "ANALYZED_AND_STANDARDIZED",
+      "description": "Starship 娛樂在宣傳 IVE 時，未沿用傳統二代、三代 K-pop 剛性的『Main Vocal / Lead Vocal / Main Dancer』標籤，僅以全員皆具歌唱與舞台能力的『完成型團體』對外溝通；但民間資料庫與樂評則依據舞台分工標記主唱與主舞。",
+      "handling_method": "在 Wiki 與簡報中並陳 Starship 官方的『去標籤化理念』，並以註記方式補充大眾與樂評所認同的實質功能擔當。",
+      "course_reflection_takeaway": "在進行知識工程時，官方公關策略（PR Positioning）與受眾客觀認知（Empirical Reception）常存在結構性落差，需設計雙軌機制並陳。"
+    },
+    {
+      "case_id": "CANDIDATE-CASE-002",
+      "category": "Terminology Nuance (詞彙常規負面語義 vs. 流行文化正向賦權)",
+      "target_file": "02_wiki_knowledge/concepts/chaebol_crush_and_self_love.md & 01_raw_sources/SRC-04",
+      "status": "ANALYZED_AND_RECONTEXTUALIZED",
+      "description": "IVE 作品〈LOVE DIVE〉以『Narcissistic (自戀)』為核心記憶點。在字典與傳統語境中帶有負面意涵；標準語言模型容易產出負向詮釋。",
+      "handling_method": "引入 NME 及音樂評論視角，於 Wiki 與簡報明確論述其翻轉希臘水仙神話（Narcissus）、將『自戀』重構為『主動擁抱自我價值』的現代自主賦權。",
+      "course_reflection_takeaway": "展示了無特定領域知識引導的通用模型在面對流行文化『語意翻轉（Semantic Inversion）』時的局限性，證實高品質 RAG 的必要性。"
+    },
+    {
+      "case_id": "CANDIDATE-CASE-003",
+      "category": "Origin Tracing (作品改編來源與創作歸屬辨析)",
+      "target_file": "02_wiki_knowledge/entities/aespa.md & comparisons/musical_style_comparison.md",
+      "status": "ANALYZED_AND_SOURCED",
+      "description": "aespa 的出圈代表作〈Next Level〉常被泛稱為團體標誌性的前衛原創曲，但其旋律骨架源自電影《玩命關頭：特別行動》配樂，SM 製作人 Yoo Young-jin 則在其中段嫁接了標誌性的 SMP 爵士放克變奏。",
+      "handling_method": "在實體與音樂風格頁面明確記載其『改編與拼貼（Interpolation & Remake）』之創作背景，突顯二次創作中的 SMP 藝術加工價值。",
+      "course_reflection_takeaway": "建構嚴謹知識庫時，必須具備『版權與衍生脈絡追溯』意識，避免將二次詮釋簡化為原生創作。"
+    }
+  ]
+}
